@@ -262,14 +262,14 @@ img{
 }
 
 .home-position{
-    font-size: 20px;
+    font-size: 18px;
     color: var(--first-color-dark);
     margin-bottom: var(--mb-5); 
     margin-top: 23px;
 }
 
 .home-medsos{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: sosmed 2s 1;
 }
 
@@ -695,10 +695,3 @@ img{
         margin-right: auto;
     }
 }
-
-
-
-  
-
-
-
