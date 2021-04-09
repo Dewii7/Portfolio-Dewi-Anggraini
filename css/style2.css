@@ -10,11 +10,11 @@
 
 /*Color*/
     --first-color: #FDFEFE;
-    --first-color-dark: #F8F9F9;
-    --first-color-darken: #F4F6F6;
+    --first-color-dark: #E0E0E0;
+    --first-color-darken: #000;
     --text-color: white;
-    --first-color-light: #C0B4B4;
-    --first-color-lighten: #151414 ;
+    --first-color-light: #BE90D4;
+    --first-color-lighten: #9B59B6;
 
 /*Font size*/
     --body-font: sans-serif;
@@ -61,7 +61,7 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    background: var(--first-color-lighten);
+    background: var(--first-color-darken);
     color: var(--text-color);
     line-height: 1;
 }
@@ -98,7 +98,7 @@ img{
 
 .section-title{
     font-size: var(--h1-font-size);
-    color: #fffa65;
+    color: var(--first-color-lighten);
     margin-bottom: var(--mb-4);
     text-align: center;
 }
@@ -120,8 +120,8 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color-lighten);
-    box-shadow: 0 2px 3px #FCF3CF;
+    background-color: var(--first-color-darken);
+    box-shadow: 0 2px 3px var(--first-color-light);
 }
 
 /*Nav*/
@@ -141,8 +141,8 @@ img{
     padding: 3rem;
     display: flex;
     align-items: center;
-    background-color: #424949;
-    transition: .5s;
+    background-color: #DCC6E0;
+    transition: .5s;;
 }
 
 .nav__close{
@@ -150,7 +150,7 @@ img{
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
-    color: var(--first-color-dark);
+    color: var(--first-color-darken);
     cursor: pointer;
 }
 
@@ -167,7 +167,7 @@ img{
 }
 
 .nav__link:hover{
-    color: #1B2631;
+    color: var(--first-color-lighten);
 }
 
 .nav__toggle{
@@ -187,7 +187,7 @@ img{
 
 /*Active Menu*/
 .active{
-    color: #F7DC6F; 
+    color: red; 
 }
 
 /*Home*/
@@ -219,7 +219,7 @@ img{
 .home-name{
     font-size: 35px;
     font-weight: 500;
-    color: var(--first-color-light);
+    color:var(--first-color-lighten);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     display: block;
@@ -257,14 +257,14 @@ img{
 }
 
 .home-position{
-    font-size: 20px;
-    color: var(--first-color-light);
+    font-size: 18px;
+    color: var(--first-color-dark);
     margin-bottom: var(--mb-5); 
     margin-top: 23px;
 }
 
 .home-medsos{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: sosmed 3s 1;
 }
 
@@ -282,8 +282,8 @@ img{
 
 .home-medsos-link{
     display: inline-flex;
-    background-color: var(--first-color);
-    color: var(--first-color-lighten);
+    background-color: var(--first-color-dark);
+    color: var(--first-color-darken);
     font-size: 1.1rem;
     border-radius: 50%;
     padding: .40rem;
@@ -292,7 +292,7 @@ img{
 }
 
 .home-medsos-link:hover{
-    background-color: #2ECC71;
+    background-color: var(--first-color-light);
 }
 
 .home-button{
@@ -314,7 +314,7 @@ img{
 }
 
 .button:hover{
-    background-color: var(--first-color-darken);
+    background-color: var(--first-color-light);
 }
 
 /*About Me*/
@@ -336,7 +336,7 @@ img{
 
 .about-information-title{
     font-size: var(--h3-font-size);
-    color: var(--first-color-dark);
+    color: var(--first-color-light);
     margin-bottom: var(--mb-2);
 }
 
@@ -360,7 +360,7 @@ img{
 
 .skills-subtitle{
     font-size: var(--h3-font-size);
-    color: var(--first-color-dark);
+    color: var(--first-color-light);
     margin-bottom: var(--mb-2);
 }
 
@@ -381,7 +381,7 @@ img{
     position: absolute;
     bottom: -.75rem;
     height: .25rem;
-    background-color: var(--first-color);
+    background-color:#FDE3A7;
 }
 
 .skills-indonesia{
@@ -439,6 +439,7 @@ img{
     font-size: var(--h4-font-size);
     margin-bottom: 1.5rem;
     padding-top: 3px;
+    color: var(--first-color-light);
 }
 
 .education-school, .education-major{
@@ -506,7 +507,7 @@ img{
 
 .works-title{
     font-size: 1.25rem;
-    color: var(--first-color-dark);
+    color: var(--first-color-light);
     margin-bottom: var(--mb-1);
 }
 
@@ -519,16 +520,16 @@ img{
 }
 
 .works-content:hover .works-icon{
-    background-color: var(--first-color-lighten);
+    background-color: var(--first-color-darken);
     color: var(--first-color);
 }
 
 .works-content:hover .works-title{
-    color: var(--first-color-lighten);
+    color: var(--first-color-darken);
 }
 
 .works-content:hover .works-description{
-    color: var(--first-color-lighten);
+    color: var(--first-color-darken);
 }
 
 /*contact*/
@@ -543,14 +544,14 @@ img{
     padding: 1rem;
     outline: none;
     border: none;
-    background-color: var(--first-color-light);
+    background-color: var(--first-color-dark);
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-2);
     border-radius: .5rem;
 }
 
 .contact ::placeholder{
-    color: var(--first-color-dark);
+    color: var(--first-color-lighten);
     font-family: var(--body-font);
     font-weight: var(--font-medium);
 }
@@ -570,7 +571,7 @@ img{
 
 .contact-subtitle{
     font-size: var(--h3-font-size);
-    color: var(--first-color-dark);
+    color: var(--first-color-lighten);
     margin-bottom: var(--mb-2);
 }
 
@@ -581,8 +582,7 @@ img{
 
 /*Footer*/
 .footer{
-    background-color: white;
-    color: var(--first-color-lighten);
+    color: var(--first-color);
     text-align: center;
     margin-top: 35px;
 }
@@ -597,8 +597,8 @@ img{
 
 .footer-link{
     display: inline-flex;
-    background-color: #212F3C;
-    color: var(--first-color-lighten);
+    background-color: var(--first-color);
+    color: var(--first-color-darken);
     font-size: 1rem;
     border-radius: 50%;
     padding: .40rem;
@@ -613,7 +613,7 @@ img{
 
 .footer-copy{
     font-size:var(--smaller-font-size);
-    color: var(--first-color-lighten);
+    color: var(--first-color);
 }
 
 @media screen and (min-width: 768px){
@@ -688,10 +688,3 @@ img{
         margin-right: auto;
     }
 }
-
-
-
-  
-
-
-
